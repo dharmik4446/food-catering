@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contactus.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="logo2 (2).png" alt="SriHomeFood.com" />
+      </div>
+      <ul>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="services.html">Services</a></li>
+        <li class="item"><a href="AboutUs.html">About Us</a></li>
+        <li class="item"><a href="signUp.html">Sign Up</a></li>
+        <li class="item"><a href="SignIn.html">Sign In</a></li>
+      </ul>
+    </nav>
+    <center>
+      <div class="contect">
+        <div class="container">
+          <h1 >Contact us</h1>
+          <p>
+            Find us at some address at some place or call us at 05050515-122330
+          </p>
+          <p>
+            <span >FYI!</span> We offer full-service catering for
+            any event, large or small. We understand your needs and we will
+            cater the food to satisfy the biggerst criteria of them all, both
+            look and taste.
+          </p>
+          <p>
+            <strong>Reserve</strong> a table, ask for today's special or just
+            send us a message:
+          </p>
+          <form
+            name="myform"
+            id="myform"
+            onsubmit="return contactus()"
+            method="post"
+            target="_blank"
+          >
+            <p>
+              <input
+                class="uname"
+                type="text"
+                id="uname"
+                placeholder="Name"
+                required
+                name="Name"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="num"
+                name="num"
+                type="text"
+                placeholder="How many people"
+                required
+                name="People"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="date"
+                type="datetime-local"
+                placeholder="Date and time"
+                required
+                name="date"
+                value="2022-11-16T20:00"
+                required
+              />
+            </p>
+            <p>
+              <textarea
+                maxlength="1000"
+                minlength="100"
+                class="area"
+                type="text"
+              >
+              Message \ Special requirements
+              </textarea>
+            </p>
+            <p>
+              <button class="send" type="submit">SEND MESSAGE</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </center>
+    <script>
+      function contactus() {
+        var number = Document.myform.number.value;
+        var name = document.myform.uname.value;
+        var regName = /\d+$/g;
+        if (name == "" || regName.test(name)) {
+          alert("Please enter your name properly.");
+          name.focus();
+          return false;
+        }
+
+        if (number == "" || NaN(number)) {
+          alert("Please enter a valid number");
+          number.focus();
+          return false;
+        }
+      }
+    </script>
+    <footer>
+      <div class="center">
+        Copyright &copy; | SriHomeFood.com | All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>

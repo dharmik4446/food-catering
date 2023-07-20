@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
+    <title>Document</title>
+    <style>
+      /* Body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    
+      /* Navigation */
+      #navbar {
+        background-color: #575656;
+        padding: 10px;
+      }
+    
+      #logo img {
+        max-width: 100px;
+        height: auto;
+      }
+    
+      #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+      }
+    
+      .item {
+        margin-right: 10px;
+      }
+    
+      .item a {
+        text-decoration: none;
+        color: #000000;
+      }
+    
+      /* Menu */
+      #menu {
+        text-align: center;
+        padding: 64px;
+        background-color: #000;
+        color: #7ffc60;
+      }
+    
+      #menu a {
+        color: #fbfbfb;
+        text-decoration: none;
+      }
+    
+      .w3-padding-large {
+        padding: 16px;
+      }
+    
+      .w3-red {
+        background-color: #f44336;
+      }
+    
+      .w3-hover-red:hover {
+        background-color: #f44336;
+      }
+    
+      /* Pizza */
+      #pizza {
+        background-color: #615f5f;
+        padding: 32px;
+      }
+    
+      .w3-tag {
+        padding: 4px 8px;
+        border-radius: 2px;
+      }
+    
+      /* Pasta */
+      #pasta {
+        text-align: center;
+        padding: 32px;
+        background-color: #858484;
+      }
+    
+      .w3-grey {
+        background-color: #9e9e9e;
+      }
+    
+      /* Starters */
+      #starters {
+        text-align: center;
+        padding: 32px;
+        background-color: #7a7777;
+      }
+    
+      .center {
+        text-align: center;
+        padding: 16px;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="logo2 (2).png" alt="SriHomeFood.com" />
+      </div>
+      <ul>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="services.html">Services</a></li>
+        <li class="item"><a href="AboutUs.html">About Us</a></li>
+        <li class="item"><a href="signUp.html">Sign Up</a></li>
+        <li class="item"><a href="SignIn.html">Sign In</a></li>
+      </ul>
+    </nav>
+    <div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+      <h1 class="w3-center w3-jumbo w3-padding-32">THE MENU</h1>
+      <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="#pizza"
+          ><div class="w3-third w3-padding-large w3-red">Pizza</div></a
+        >
+        <a href="#pasta"
+          ><div class="w3-third w3-padding-large w3-hover-red">Pasta</div></a
+        >
+        <a href="#starters"
+          ><div class="w3-third w3-padding-large w3-hover-red">Starters</div></a
+        >
+      </div>
+
+      <div id="pizza" class="w3-container w3-white w3-padding-32">
+        <h1>
+          <b>Margherita</b>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span>
+        </h1>
+        <p class="w3-text-grey">
+          Fresh tomatoes, fresh mozzarella, fresh basil
+        </p>
+        <hr />
+
+        <h1>
+          <b>Formaggio</b>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span>
+        </h1>
+        <p class="w3-text-grey">
+          Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)
+        </p>
+        <hr />
+
+        <h1>
+          <b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span>
+        </h1>
+        <p class="w3-text-grey">
+          Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken
+        </p>
+      </div>
+
+      <h1 id="pasta" class="w3-center w3-jumbo w3-padding-32">PASTA</h1>
+      <div class="w3-container w3-white w3-padding-32">
+        <h1>
+          <b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span>
+        </h1>
+        <p class="w3-text-grey">
+          Special sauce, mozzarella, parmesan, ground beef
+        </p>
+        <hr />
+
+        <h1>
+          <b>Ravioli</b>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span>
+        </h1>
+        <p class="w3-text-grey">Ravioli filled with cheese</p>
+        <hr />
+
+        <h1>
+          <b>Spaghetti Classica</b>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span>
+        </h1>
+        <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      </div>
+
+      <h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS</h1>
+      <div class="w3-container w3-white w3-padding-32">
+        <h1>
+          <b>Today's Soup</b>
+          <span class="w3-tag w3-grey w3-round">Seasonal</span>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span>
+        </h1>
+        <p class="w3-text-grey">Ask the waiter</p>
+        <hr />
+
+        <h1>
+          <b>Bruschetta</b>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span>
+        </h1>
+        <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+        <hr />
+
+        <h1>
+          <b>Garlic bread</b>
+          <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span>
+        </h1>
+        <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      </div>
+    </div>
+    <footer>
+      <div class="center">
+        Copyright &copy; | SriHomeFood.com | All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
